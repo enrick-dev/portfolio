@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+  font-family: 'Secular One', sans-serif;
+  color: #f1f1f1;
+  background-color: #390a36;
+}
+
+header {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+header > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+header > section > p {
+  font-size: 2rem;
+}
+.titleContainer {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22rem;
+  line-height: 72%;
+}
+.titleContainer> div{
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 17rem;
+}
+.titleContainer> div >div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
