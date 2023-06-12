@@ -41,6 +41,24 @@ header
       width: 100%
       display: flex
       justify-content: space-evenly
+      
+      >a
+        height: 80%
+        display: flex
+        align-items: flex-end
+        position: relative
+
+        &:hover
+          transform: translateY(-1rem)
+          transition: .05s
+          
+        >img
+          height: 5rem
+          position: absolute
+      
+      a:last-child>img
+        height: 5.5rem
+        transform: translateY(.5rem)
 
 
 

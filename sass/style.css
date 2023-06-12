@@ -47,6 +47,28 @@ header > section > p {
   justify-content: space-evenly;
 }
 
+.titleContainer > div > div > a {
+  height: 80%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.titleContainer > div > div > a:hover {
+  transform: translateY(-1rem);
+  transition: .05s;
+}
+
+.titleContainer > div > div > a > img {
+  height: 5rem;
+  position: absolute;
+}
+
+.titleContainer > div > div a:last-child > img {
+  height: 5.5rem;
+  transform: translateY(0.5rem);
+}
+
 .descContainer {
   width: 70%;
   align-self: flex-end;
