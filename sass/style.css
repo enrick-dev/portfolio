@@ -199,29 +199,24 @@ header > section > p {
 
 @media screen and (max-width: 775px) {
   .descContainer {
-    display: none;
+    font-size: 1rem;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .descContainer {
+    font-size: .73rem;
   }
 }
 
 .textMobile {
-  width: 60%;
+  display: none;
 }
 
 @media screen and (min-width: 775px) {
   .textMobile {
     display: none;
-  }
-}
-
-.textMobile > p {
-  line-height: 100%;
-  font-size: 2.4rem;
-  text-align: center;
-}
-
-@media screen and (max-width: 510px) {
-  .textMobile > p {
-    font-size: 1.6rem;
   }
 }
 
