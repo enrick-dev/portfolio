@@ -151,12 +151,6 @@ header > section > p {
 @media screen and (max-width: 775px) {
   .titleContainer > div > div > a > img {
     scale: 70%;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  .titleContainer > div > div > a > img {
-    scale: 50%;
     height: 100%;
   }
 }
@@ -175,12 +169,6 @@ header > section > p {
 @media screen and (max-width: 775px) {
   .titleContainer > div > div a:last-child > img {
     scale: 70%;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  .titleContainer > div > div a:last-child > img {
-    scale: 50%;
     height: 100%;
   }
 }
@@ -211,13 +199,29 @@ header > section > p {
 
 @media screen and (max-width: 775px) {
   .descContainer {
-    font-size: 0.78rem;
+    display: none;
   }
 }
 
+.textMobile {
+  width: 60%;
+}
+
+@media screen and (min-width: 775px) {
+  .textMobile {
+    display: none;
+  }
+}
+
+.textMobile > p {
+  line-height: 100%;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 510px) {
-  .descContainer {
-    font-size: 0.54rem;
+  .textMobile > p {
+    font-size: 1.6rem;
   }
 }
 
