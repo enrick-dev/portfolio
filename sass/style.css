@@ -166,6 +166,25 @@ header > section > p {
   transform: translateY(0.5rem);
 }
 
+@media screen and (max-width: 1000px) {
+  .titleContainer > div > div a:last-child > img {
+    scale: 90%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .titleContainer > div > div a:last-child > img {
+    scale: 70%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .titleContainer > div > div a:last-child > img {
+    scale: 50%;
+    height: 100%;
+  }
+}
+
 .descContainer {
   width: 70%;
   align-self: flex-end;

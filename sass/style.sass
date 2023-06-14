@@ -121,6 +121,13 @@ header
       a:last-child>img
         height: 5.5rem
         transform: translateY(.5rem)
+        @include tablet
+          scale: 90%
+        @include smallTablet
+          scale: 70%
+        @include mobile
+          scale: 50%
+          height: 100%
 
 
 .descContainer
