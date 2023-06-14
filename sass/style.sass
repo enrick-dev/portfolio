@@ -10,7 +10,7 @@
 $desktopMin-width: 1450px
 $tablet-width: 1000px
 $small-tablet-width: 775px
-$mobile-width: 10px
+$mobile-width: 510px
 
 
 @mixin desktopMin
@@ -22,7 +22,7 @@ $mobile-width: 10px
     @content
 
 @mixin smallTablet
-  @media screen and ( max-width: #{$tablet-width} )
+  @media screen and ( max-width: #{$small-tablet-width} )
     @content
 
 @mixin mobile
@@ -46,6 +46,8 @@ header
     display: flex
     flex-direction: column
     gap: 1.5rem
+    @include smallTablet
+      gap: 0.8rem
 
     >p
       font-size: 2.8rem
@@ -56,7 +58,9 @@ header
       @include tablet
         font-size: 2.1rem
       @include smallTablet
-        font-size: 2.1rem
+        font-size: 1.5rem
+      @include mobile
+        font-size: 1rem  
         
       
 
@@ -69,6 +73,10 @@ header
     font-size: 18rem
   @include tablet
     font-size: 14rem
+  @include smallTablet
+    font-size: 9rem
+  @include mobile
+    font-size: 6.2rem  
 
   >div
     display: flex
@@ -78,6 +86,10 @@ header
       font-size: 13rem
     @include tablet
       font-size: 10rem
+    @include smallTablet
+      font-size: 5.5rem
+    @include mobile
+      font-size: 3.6rem  
 
     >div
       width: 100%
@@ -85,7 +97,7 @@ header
       justify-content: space-evenly
       
       >a
-        height: 80%
+        height: 100%
         display: flex
         align-items: flex-end
         position: relative
@@ -99,6 +111,10 @@ header
           position: absolute
           @include tablet
             scale: 90%
+          @include smallTablet
+            scale: 70%
+          @include mobile
+            scale: 50%
       
       a:last-child>img
         height: 5.5rem
@@ -119,6 +135,10 @@ header
     font-size: 1.5rem
   @include tablet
     font-size: 1.2rem
+  @include smallTablet
+    font-size: 0.78rem
+  @include mobile
+    font-size: 0.54rem
 
 
 // section dos projetos feitos
@@ -152,6 +172,9 @@ main>section
     .screens
       font-size: 1.5rem
       color: #2a2a2a
+      @include smallTablet
+        font-size: 1.3rem
+
 
       >figure
         display: flex
@@ -163,10 +186,16 @@ main>section
 
           @include desktopMin
             width: 490px
+          @include smallTablet
+            width: 390px
+          @include mobile
+            width: 290px
     
     .texts
       font-size: 2rem
       font-weight: bold
+      @include smallTablet
+        font-size: 1.6rem
 
     .buttons
       width: 100%
@@ -188,6 +217,9 @@ main>section
         overflow: hidden
         color: #2D082B
         text-transform: uppercase
+        @include smallTablet
+          width: 12rem
+          height: 3.8rem
         
         &:hover
           color: #fff

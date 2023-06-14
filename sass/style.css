@@ -22,6 +22,12 @@ header > section {
   gap: 1.5rem;
 }
 
+@media screen and (max-width: 775px) {
+  header > section {
+    gap: 0.8rem;
+  }
+}
+
 header > section > p {
   font-size: 2.8rem;
   line-height: 0%;
@@ -40,9 +46,15 @@ header > section > p {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 775px) {
   header > section > p {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  header > section > p {
+    font-size: 1rem;
   }
 }
 
@@ -65,6 +77,18 @@ header > section > p {
   }
 }
 
+@media screen and (max-width: 775px) {
+  .titleContainer {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .titleContainer {
+    font-size: 6.2rem;
+  }
+}
+
 .titleContainer > div {
   display: flex;
   justify-content: space-between;
@@ -83,6 +107,18 @@ header > section > p {
   }
 }
 
+@media screen and (max-width: 775px) {
+  .titleContainer > div {
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .titleContainer > div {
+    font-size: 3.6rem;
+  }
+}
+
 .titleContainer > div > div {
   width: 100%;
   display: flex;
@@ -90,7 +126,7 @@ header > section > p {
 }
 
 .titleContainer > div > div > a {
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -109,6 +145,18 @@ header > section > p {
 @media screen and (max-width: 1000px) {
   .titleContainer > div > div > a > img {
     scale: 90%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .titleContainer > div > div > a > img {
+    scale: 70%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .titleContainer > div > div > a > img {
+    scale: 50%;
   }
 }
 
@@ -138,6 +186,18 @@ header > section > p {
 @media screen and (max-width: 1000px) {
   .descContainer {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .descContainer {
+    font-size: 0.78rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .descContainer {
+    font-size: 0.54rem;
   }
 }
 
@@ -176,6 +236,12 @@ main > section {
   color: #2a2a2a;
 }
 
+@media screen and (max-width: 775px) {
+  .contentProjects > div .screens {
+    font-size: 1.3rem;
+  }
+}
+
 .contentProjects > div .screens > figure {
   display: flex;
   flex-direction: column;
@@ -192,9 +258,27 @@ main > section {
   }
 }
 
+@media screen and (max-width: 775px) {
+  .contentProjects > div .screens > figure img {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .contentProjects > div .screens > figure img {
+    width: 290px;
+  }
+}
+
 .contentProjects > div .texts {
   font-size: 2rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 775px) {
+  .contentProjects > div .texts {
+    font-size: 1.6rem;
+  }
 }
 
 .contentProjects > div .buttons {
@@ -218,6 +302,13 @@ main > section {
   overflow: hidden;
   color: #2D082B;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 775px) {
+  .contentProjects > div .buttons > a > button {
+    width: 12rem;
+    height: 3.8rem;
+  }
 }
 
 .contentProjects > div .buttons > a > button:hover {
