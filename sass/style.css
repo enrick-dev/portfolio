@@ -7,13 +7,15 @@
 body {
   font-family: 'Secular One', sans-serif;
   color: #f1f1f1;
-  background: radial-gradient(#530e4d, #390a36, #1c051c);
+  height: 200vh;
 }
 
 header {
   height: 100vh;
   display: grid;
   place-items: center;
+  background: radial-gradient(#530e4d, #390a36, #1c051c);
+  border-bottom: 100px dashed  #530e4d;
 }
 
 header > section {
@@ -62,6 +64,7 @@ header > section > p {
 .titleContainer > div > div > a > img {
   height: 5rem;
   position: absolute;
+  -webkit-background-clip: red;
 }
 
 .titleContainer > div > div a:last-child > img {
