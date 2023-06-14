@@ -28,6 +28,24 @@ header > section > p {
   color: #c9b3c8be;
 }
 
+@media screen and (max-width: 1450px) {
+  header > section > p {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header > section > p {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header > section > p {
+    font-size: 2.1rem;
+  }
+}
+
 .titleContainer {
   text-transform: uppercase;
   font-weight: 700;
@@ -35,10 +53,34 @@ header > section > p {
   line-height: 72%;
 }
 
+@media screen and (max-width: 1450px) {
+  .titleContainer {
+    font-size: 18rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .titleContainer {
+    font-size: 14rem;
+  }
+}
+
 .titleContainer > div {
   display: flex;
   justify-content: space-between;
   font-size: 17rem;
+}
+
+@media screen and (max-width: 1450px) {
+  .titleContainer > div {
+    font-size: 13rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .titleContainer > div {
+    font-size: 10rem;
+  }
 }
 
 .titleContainer > div > div {
@@ -64,6 +106,12 @@ header > section > p {
   position: absolute;
 }
 
+@media screen and (max-width: 1000px) {
+  .titleContainer > div > div > a > img {
+    scale: 90%;
+  }
+}
+
 .titleContainer > div > div a:last-child > img {
   height: 5.5rem;
   transform: translateY(0.5rem);
@@ -79,6 +127,18 @@ header > section > p {
   text-indent: 15%;
   word-wrap: break-word;
   color: #f1f1f1ce;
+}
+
+@media screen and (max-width: 1450px) {
+  .descContainer {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .descContainer {
+    font-size: 1.2rem;
+  }
 }
 
 .gradientBackground {
@@ -126,7 +186,77 @@ main > section {
   width: 620px;
 }
 
-.contentProjects > div .texts > h3 {
+@media screen and (max-width: 1450px) {
+  .contentProjects > div .screens > figure img {
+    width: 490px;
+  }
+}
+
+.contentProjects > div .texts {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.contentProjects > div .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contentProjects > div .buttons > a > button {
+  margin-top: 1rem;
+  width: 13rem;
+  height: 4rem;
+  border-radius: 0.2rem;
+  border: 1px solid #131313;
+  background: #ffffff21;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: 0.1s linear;
+  overflow: hidden;
+  color: #2D082B;
+  text-transform: uppercase;
+}
+
+.contentProjects > div .buttons > a > button:hover {
+  color: #fff;
+}
+
+.contentProjects > div .buttons > a:first-child > button::after {
+  content: '';
+  position: absolute;
+  rotate: 25deg;
+  width: 25%;
+  height: 300%;
+  top: -30px;
+  left: -10px;
+  background: #2D082B;
+  transition: 0.15s linear;
+  z-index: -1;
+}
+
+.contentProjects > div .buttons > a:first-child > button:hover::after {
+  width: 120%;
+  color: #fff;
+}
+
+.contentProjects > div .buttons > a:last-child > button::after {
+  content: '';
+  position: absolute;
+  rotate: 25deg;
+  width: 25%;
+  height: 160%;
+  top: -10px;
+  left: -10px;
+  background: #2D082B;
+  transition: 0.15s ease;
+  z-index: -1;
+}
+
+.contentProjects > div .buttons > a:last-child > button:hover::after {
+  width: 120%;
+  height: 160%;
+  color: #fff;
 }
