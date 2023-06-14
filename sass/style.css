@@ -13,7 +13,7 @@ header {
   height: 100vh;
   display: grid;
   place-items: center;
-  background: radial-gradient(#530e4d, #390a36, #1c051c);
+  background: radial-gradient(#61456a, #1c051c);
 }
 
 header > section {
