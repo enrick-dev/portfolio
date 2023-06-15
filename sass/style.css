@@ -16,6 +16,16 @@ header {
   background: radial-gradient(#61456a, #1c051c);
 }
 
+@media screen and (max-width: 775px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 10%;
+  }
+}
+
 header > section {
   display: flex;
   flex-direction: column;
@@ -48,7 +58,7 @@ header > section > p {
 
 @media screen and (max-width: 775px) {
   header > section > p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -79,7 +89,7 @@ header > section > p {
 
 @media screen and (max-width: 775px) {
   .titleContainer {
-    font-size: 9rem;
+    font-size: 9.5rem;
   }
 }
 
@@ -123,6 +133,12 @@ header > section > p {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 775px) {
+  .titleContainer > div > div {
+    display: none;
+  }
 }
 
 .titleContainer > div > div > a {
@@ -199,8 +215,10 @@ header > section > p {
 
 @media screen and (max-width: 775px) {
   .descContainer {
-    font-size: 1rem;
-    width: 95%;
+    text-indent: 0px;
+    font-size: 2.2rem;
+    text-align: end;
+    width: 70%;
   }
 }
 
@@ -210,12 +228,17 @@ header > section > p {
   }
 }
 
-.textMobile {
-  display: none;
+.iconMobile {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 775px) {
-  .textMobile {
+  .iconMobile {
     display: none;
   }
 }
